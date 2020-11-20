@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <div>
+            <span class="category-header gray">People Foundation</span>
+            <h1>Core Competences</h1>
+            <div class="cards">
+                <section class="comp-card leader-card">
+                    <h2 class="leaders">Leaders</h2>
+                    <ul>
+                        <li>future focus</li>
+                        <li>ownership</li>
+                        <li>develops self & others</li>
+                        <li>courageous</li>
+                    </ul>
+                </section>
+                <section class="comp-card player-card">
+                    <h2 class="team-players">Team Players</h2>
+                    <ul>
+                        <li>self-aware</li>
+                        <li>builds networks</li>
+                        <li>drives for results</li>
+                        <li>engages others</li>
+                    </ul>
+                </section>
+                <section class="comp-card innovation-card">
+                    <h2 class="innovative">Innovative</h2>
+                    <ul>
+                        <li>creative</li>
+                        <li>critical thinker</li>
+                        <li>relentless improver</li>
+                        <li>embrace change</li>
+                    </ul>
+                </section>
+                <section class="comp-card customer-card">
+                    <h2 class="customer-obsessed">Customer-Centric</h2>
+                    <ul>
+                        <li>patient focus</li>
+                        <li>customer empathy</li>
+                        <li>value creation</li>
+                        <li>business acumen</li>
+                    </ul>
+                </section>
+                <section class="comp-card inclusive-card">
+                    <h2 class="inclusive">Inclusive</h2>
+                    <ul>
+                        <li>builds trust</li>
+                        <li>seeks diverse views</li>
+                        <li>respects others</li>
+                        <li>communicate effectively</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="action-call">
+                <h3 class="rainbow">Do we embody our values?</h3>
+                <span id="start-btn">Discuss!</span>
+            </div>
+            
+        </div> 
+    </div>
+    <div id="modal">
+        <button id="close" class="control" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+        <div class="container">
+            <label class="control" id="previous">
+                <input type="image" src="assets/previous.svg" alt="Search">
+                <span>previous</span>
+            </label>
+            <div class="slides-container">
+                <div class="slides">
+                    <section id="future_focus" class="slide active-slide">
+                        <header>
+                            <span class="category-header">Leadership Discussion:</span>
+                            <h1>Future Focus</h1>
+                            
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>foster a global mindset?</li>
+                                <li>create value for ResMed?</li>
+                                <li>anticipate future trends?</li>
+                                <li>focus on what's important?</li>
+                                <li>align our priorities with stragetgy?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="ownership" class="slide">
+                        <header>
+                            <span class="category-header">Leadership Discussion:</span>
+                            <h1>Ownership</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>act decisively?</li>
+                                <li>weigh trade-offs?</li>
+                                <li>promote a sense of urgency?</li>
+                                <li>deliver on our commitments?</li>
+                                <li>take ownership for outcomes?</li>
+                                <li>consider constraints and obstacles?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="growth" class="slide">
+                        <header>
+                            <span class="category-header">Leadership Discussion</span>
+                            <h1>Develops Self & Others</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>learn and grow?</li>
+                                <li>proactively mentor others?</li>
+                                <li>leverage each others strengths?</li>
+                                <li>inspire each other to be the best they can be?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="courageous" class="slide">
+                        <header>
+                            <span class="category-header">Leadership Discussion:</span>
+                            <h1>Courageous</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="self_aware" class="slide">
+                        <header>
+                            <span class="category-header">Collaboration Discussion:</span>
+                            <h1>Self-Aware</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="builds_networks" class="slide">
+                        <header>
+                            <span class="category-header">Collaboration Discussion:</span>
+                            <h1>Builds Networks</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="drives_for_results" class="slide">
+                        <header>
+                            <span class="category-header">Collaboration Discussion:</span>
+                            <h1>Drives for Results</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="engages_others" class="slide">
+                        <header>
+                            <span class="category-header">Innovation Discussion:</span>
+                            <h1>Engages Others</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="creative" class="slide">
+                        <header>
+                            <span class="category-header">Innovation Discussion:</span>
+                            <h1>Creative</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="critical_thinker" class="slide">
+                        <header>
+                            <span class="category-header">Innovation Discussion:</span>
+                            <h1>Critical Thinker</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="relentless_improver" class="slide">
+                        <header>
+                            <span class="category-header">Innovation Discussion:</span>
+                            <h1>Relentless Improver</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="embrace_change" class="slide">
+                        <header>
+                            <span class="category-header">Innovation Discussion:</span>
+                            <h1>Embrace Change</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="patient_focus" class="slide">
+                        <header>
+                            <span class="category-header">Customer Obsession  Discussion:</span>
+                            <h1>Patient Focus</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="customer_empathy" class="slide">
+                        <header>
+                            <span class="category-header">Customer Obsession Discussion:</span>
+                            <h1>Customer Empathy</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="value_creation" class="slide">
+                        <header>
+                            <span class="category-header">Customer Obsession Discussion:</span>
+                            <h1>Value Creation</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="business_acumen" class="slide">
+                        <header>
+                            <span class="category-header">Customer Obsession Discussion:</span>
+                            <h1>Business Acumen</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="build_trust" class="slide">
+                        <header>
+                            <span class="category-header">Inclusion Discussion:</span>
+                            <h1>Build Trust</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="seek_diverse_views" class="slide">
+                        <header>
+                            <span class="category-header">Inclusion Discussion:</span>
+                            <h1>Seek Diverse Views</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="respects_others" class="slide">
+                        <header>
+                            <span class="category-header">Inclusion Discussion:</span>
+                            <h1>Respects Others</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="communicates_effectively" class="slide">
+                        <header>
+                            <span class="category-header">Inclusion Discussion:</span>
+                            <h1>Communicates Effectively</h1>
+                            <p class="question">As a team, do we...</p>
+                        </header>
+                        <div class="columns">
+                            <ul class="positive">
+                                <li>ask for help?</li>
+                                <li>admit mistakes?</li>
+                                <li>express vulnerability?</li>
+                                <li>question the status quo?</li>
+                                <li>say what needs to be said?</li>
+                                <li>resiliently stay the course?</li>
+                                <li>take calculated risks and experiment?</li>
+                            </ul>
+                        </div>
+                    </section>
+
+
+
+
+
+                    <section class="results slide">
+                        <header>
+                            <!-- <h1>Reflect</h1> -->
+                            <h1 class="rainbow">How will we better embody our ideals?</h1>
+                        </header>
+                        <div class="lists">
+                            <section>
+                                <img src="assets/awesome-blk.svg" alt="awesome at">
+                                <ul id="positiveUL">
+                                </ul>
+                            </section>
+                            <section>
+                                <img src="assets/positive-blk.svg" alt="okay at">
+                                <ul id="neutralUL">
+                                </ul>
+                            </section>
+                            <section>
+                                <img src="assets/neutral-blk.svg" alt="need to work at">
+                                <ul id="negativeUL">
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="rainbow">
+                            <span class="leaders-bg">All Leaders</span><span class="team-players-bg">Team Players</span><span class="innovative-bg">Innovative</span><span class="customer-obsessed-bg">Customer Obsessed </span><span class="inclusive-bg">Inclusive</span>
+                        </div>
+                        <div id="restart">
+                            <input type="image" src="assets/restart.svg" alt="awesome button">
+                            <span>restart</span>
+                        </div>
+                        
+                    </section>
+                </div>
+                <footer id="footer">
+                        <div id="positive" class="self-review">
+                            <input type="image" src="assets/awesome.svg" alt="awesome button">
+                            <span>we do awesome</span>
+                        </div>
+                        <div id="neutral"  class="self-review">
+                            <input type="image" src="assets/positive.svg" alt="neutral button">
+                            <span>we do ok</span>
+                        </div>
+                        <!-- TODO: replace with book, weight or concentrating face -->
+                        <div id="negative" class="self-review">
+                            <input  type="image" src="assets/neutral.svg" alt="negative button">
+                            <span>we need practice</span>
+                        </div>
+                </footer>
+            </div>
+            <label class="control" id="next">
+                <input type="image" src="assets/next.svg" alt="Search">
+                <span>next</span>
+            </label>
+        </div>
+    </div>
+</body>
+</html>
