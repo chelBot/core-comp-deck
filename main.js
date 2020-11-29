@@ -8,6 +8,7 @@
 
     startBtn.addEventListener("click", function() {
         modal.style.maxHeight= "100vh";
+        // modal.style.height= "500px";
         modal.style.visibility = "visible";
         start.style.maxHeight = "0";
         start.style.visibility = "hidden";
