@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script defer src="es2015.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="start-screen">
         <div>
@@ -61,7 +63,7 @@
                     </ul>
                 </section>
             </div>
-        </div> 
+        </div>
     </div>
     <div id="modal">
         <button id="close" class="control" aria-label="Close">
@@ -69,8 +71,8 @@
         </button>
         <div class="container">
             <label class="control" id="previous">
-                <div class="arrow"><</div>
-                <span>previous</span>
+                <div class="arrow">
+                    <</div> <span>previous</span>
             </label>
             <div class="slides-container">
                 <div class="slides">
@@ -78,18 +80,29 @@
                         <header>
                             <span class="category-header">Leadership Discussion:</span>
                             <h1>Future Focus</h1>
-                            
                             <p class="question">As a team, do we...</p>
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>foster a global mindset?</li>
-                                <li>create value for ResMed?</li>
-                                <li>anticipate future trends?</li>
+                                <li>see ahead and anticipate future trends?</li>
+                                <li>align team priorities with strategy?</li>
                                 <li>focus on what's important?</li>
-                                <li>align our priorities with stragetgy?</li>
+                                <li>have a global mindset?</li>
                             </ul>
                         </div>
+                        <details tabindex="0">
+                            <summary tabindex="0">Not Sure?</summary>
+                            <div class="toggle-content">
+                                <p class="question">As a team, we...</p>
+                                <ul>
+                                    <li>may not see the big picture and are more comfortable in the tactical here and now.</li> 
+                                    <li>sometimes don't consider broader implications of decisions.</li>
+                                    <li>lack planning to get from current state to future state.</li>
+                                    <li>push for big ideas that may not work in ResMed’s context.</li>
+                                </ul><br>
+                                <p>If this sounds like your team, select "we need practice".</p>
+                            </div>
+                        </details>
                     </section>
                     <section id="ownership" class="slide">
                         <header>
@@ -99,14 +112,26 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>act decisively?</li>
-                                <li>weigh trade-offs?</li>
-                                <li>promote a sense of urgency?</li>
                                 <li>deliver on our commitments?</li>
-                                <li>take ownership for outcomes?</li>
-                                <li>consider constraints and obstacles?</li>
+                                <li>take accountability for problems and solutions?</li>
+                                <li>promote a sense of urgency?</li>
+                                <li>understand trade offs and expect obstacles?</li>
                             </ul>
                         </div>
+                        <details tabindex="0">
+                            <summary tabindex="0">Not Sure?</summary>
+                            <div class="toggle-content">
+                                <p class="question">As a team, we...</p>
+                                <ul>
+                                    <li>struggle to say no and then under deliver.</li> 
+                                    <li>get overwhelmed with a view that everything is equally important.</li>
+                                    <li>are not always clear on the problem to be solved.</li>
+                                    <li>blame other teams or people.</li>
+                                    <li>fail to help others course correct when roadblocks are apparent.</li>
+                                </ul><br>
+                                <p>If this sounds more like your team, select "we need practice".</p>
+                            </div>
+                        </details>
                     </section>
                     <section id="growth" class="slide">
                         <header>
@@ -116,12 +141,25 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>learn and grow?</li>
-                                <li>proactively mentor others?</li>
-                                <li>leverage each others strengths?</li>
-                                <li>inspire each other to be the best they can be?</li>
+                                <li>make time to focus on development?</li>
+                                <li>leverage each others strengts?</li>
+                                <li>inspire learning and growth?</li>
+                                <li>coach and mentor others?</li>
                             </ul>
                         </div>
+                        <details tabindex="0">
+                            <summary tabindex="0">Not Sure?</summary>
+                            <div class="toggle-content">
+                                <p class="question">As a team, we...</p>
+                                <ul>
+                                    <li>don’t prioritize team or self development.</li> 
+                                    <li>think development is a manager’s responsibility.</li>
+                                    <li>may be threatened by the potential of others.</li>
+                                    <li>are too quick to try fads.</li>
+                                </ul><br>
+                                <p>If this sounds more like your team, select "we need practice".</p>
+                            </div>
+                        </details>
                     </section>
                     <section id="courageous" class="slide">
                         <header>
@@ -131,15 +169,25 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
                                 <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>experiment and take risks?</li>
+                                <li>ask for help and admit mistakes?</li>
+                                <li>tackle tough issues and show vulnerability?</li>
                             </ul>
                         </div>
+                        <details tabindex="0">
+                            <summary tabindex="0">Not Sure?</summary>
+                            <div class="toggle-content">
+                                <p class="question">As a team, we...</p>
+                                <ul>
+                                    <li>avoid difficult conversations or speaking up.</li> 
+                                    <li>fail to take a stand on important issues.</li>
+                                    <li>are reluctant to pursue challenging initiatives.</li>
+                                    <li>lack resilience and persistence.</li>
+                                </ul><br>
+                                <p>If this sounds more like your team, select "we need practice".</p>
+                            </div>
+                        </details>
                     </section>
                     <section id="self_aware" class="slide">
                         <header>
@@ -149,13 +197,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>know our strengths and limitations?</li>
+                                <li>proactively seek feedback from other teams?</li>
+                                <li>know our value and how we perceived by others?</li>
+                                <li>reflect and learn from failure?</li>
                             </ul>
                         </div>
                     </section>
@@ -167,13 +212,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>build good relationships and collaborate well?</li>
+                                <li>share information, ideas and resources?</li> 
+                                <li>build external partnerships?</li>
+                                <li>learn from other teams and companies?</li>
                             </ul>
                         </div>
                     </section>
@@ -185,31 +227,25 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>have a can-do attitude to deliver value?</li>
+                                <li>consistently execute goals and strategies?</li>
+                                <li>know how to prioritize competing goals?</li>
+                                <li>demonstrate resilience and persistence?</li>
                             </ul>
                         </div>
                     </section>
                     <section id="engages_others" class="slide">
                         <header>
-                            <span class="category-header">Innovation Discussion:</span>
+                            <span class="category-header">Collaboration Discussion:</span>
                             <h1>Engages Others</h1>
                             <p class="question">As a team, do we...</p>
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>create a positive and motivating culture?</li>
+                                <li>empower others to do their best work?</li>
+                                <li>engage in open and honest dialogue?</li>
+                                <li>recognize, celebrate and share successes?</li>
                             </ul>
                         </div>
                     </section>
@@ -221,13 +257,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>innovate with internal and external know-how?</li>
+                                <li>make new and imaginative ideas a reality?</li>
+                                <li>share new ways of looking at problems?</li>
+                                <li>encourage diverse thinking to nurture innovation?</li>
                             </ul>
                         </div>
                     </section>
@@ -239,13 +272,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>show curiosity and think objectively to solve problems?</li>
+                                <li>take a broad perspective and understand interdependencies?</li>
+                                <li>analyze data from multiple sources?</li>
+                                <li>challenge consensus and consider the less popular?</li>
                             </ul>
                         </div>
                     </section>
@@ -257,13 +287,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>constantly look for better ways of working?</li>
+                                <li>remove barriers and collaborate?</li>
+                                <li>demonstrate disruptive curiosity?</li>
+                                <li>drive a business excellence mindset?</li>
                             </ul>
                         </div>
                     </section>
@@ -275,31 +302,25 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>show openness to new thinking, process & systems?</li>
+                                <li>learn quickly when faced with new challenges?</li>
+                                <li>anticipate change, risk and uncertainty?</li>
+                                <li>create inspiration for change?</li>
                             </ul>
                         </div>
                     </section>
                     <section id="patient_focus" class="slide">
                         <header>
-                            <span class="category-header">Customer Obsession  Discussion:</span>
+                            <span class="category-header">Customer Obsession Discussion:</span>
                             <h1>Patient Focus</h1>
                             <p class="question">As a team, do we...</p>
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>focus on improving patient lives?</li> 
+                                <li>show empathy for the patient journey?</li> 
+                                <li>seek to understand patient point of view?</li>
+                                <li>create solutions that unlock value for the patient?</li>
                             </ul>
                         </div>
                     </section>
@@ -311,13 +332,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>act with our customer in mind (internal and external)?</li> 
+                                <li>understand what is important to the customer?</li>
+                                <li>build trust and act responsively?</li>
+                                <li>monitor data and customer feedback to optimize value?</li>
                             </ul>
                         </div>
                     </section>
@@ -329,13 +347,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>focus on what will deliver the greatest impact?</li>
+                                <li>deliver incremental value to our customers?</li>
+                                <li>maintain mutually beneficial relationships?</li> 
+                                <li>think as entrepreneurs, anticipate change & target new opportunities?</li>
                             </ul>
                         </div>
                     </section>
@@ -347,13 +362,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>know how business models work?</li>
+                                <li>know the competition and markets?</li>
+                                <li>use knowledge of profit and revenue drivers to guide actions?</li>
+                                <li>balance short & long term; local & global priorities for overall ResMed success?</li> 
                             </ul>
                         </div>
                     </section>
@@ -365,13 +377,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>take time to build trust and assume positive intent?</li>
+                                <li>ademonstrate integrity and authenticity?</li>
+                                <li>connect with curiosity and empathy?</li> 
+                                <li>celebrate failure: learning, never punishing?</li> 
                             </ul>
                         </div>
                     </section>
@@ -383,13 +392,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>actively listen to each other?</li>
+                                <li>create safety for others to speak up?</li>
+                                <li>encourage others to take an alternative point of view?</li>
+                                <li>give each other time to reflect?</li>
                             </ul>
                         </div>
                     </section>
@@ -401,13 +407,10 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>treat others with fairness and dignity?</li>
+                                <li>show up as our authentic self?</li>
+                                <li>value uniqueness, differences and belonging?</li> 
+                                <li>create psychological-safety? </li>
                             </ul>
                         </div>
                     </section>
@@ -419,18 +422,15 @@
                         </header>
                         <div class="columns">
                             <ul class="positive">
-                                <li>ask for help?</li>
-                                <li>admit mistakes?</li>
-                                <li>express vulnerability?</li>
-                                <li>question the status quo?</li>
-                                <li>say what needs to be said?</li>
-                                <li>resiliently stay the course?</li>
-                                <li>take calculated risks and experiment?</li>
+                                <li>actively listen and are we approachable?</li>
+                                <li>encourage two-way dialogue?</li>
+                                <li>communicate decisions and share timely information?</li>
+                                <li>have open conversations and address the elephant in the room?</li>
                             </ul>
                         </div>
                     </section>
 
-                    
+
                     <section class="results slide">
                         <header>
                             <!-- <h1>Reflect</h1> -->
@@ -454,29 +454,32 @@
                             </section>
                         </div>
                         <div class="rainbow">
-                            <span class="leaders-bg">All Leaders</span><span class="team-players-bg">Team Players</span><span class="innovative-bg">Innovative</span><span class="customer-obsessed-bg">Customer Obsessed </span><span class="inclusive-bg">Inclusive</span>
+                            <span class="leaders-bg">All Leaders</span><span class="team-players-bg">Team
+                                Players</span><span class="innovative-bg">Innovative</span><span
+                                class="customer-obsessed-bg">Customer Obsessed </span><span
+                                class="inclusive-bg">Inclusive</span>
                         </div>
                         <div id="restart">
                             <img type="image" src="assets/restart.svg" alt="awesome button" />
                             <span>restart</span>
                         </div>
-                        
+
                     </section>
                 </div>
                 <footer id="footer">
-                        <div id="positive" class="self-review">
-                            <input type="image" src="assets/awesome.svg" alt="awesome button">
-                            <span>we do awesome</span>
-                        </div>
-                        <div id="neutral"  class="self-review">
-                            <input type="image" src="assets/positive.svg" alt="neutral button">
-                            <span>we do ok</span>
-                        </div>
-                        <!-- TODO: replace with book, weight or concentrating face -->
-                        <div id="negative" class="self-review">
-                            <input  type="image" src="assets/neutral.svg" alt="negative button">
-                            <span>we need practice</span>
-                        </div>
+                    <div id="positive" class="self-review">
+                        <input type="image" src="assets/awesome.svg" alt="awesome button">
+                        <span>we do awesome</span>
+                    </div>
+                    <div id="neutral" class="self-review">
+                        <input type="image" src="assets/positive.svg" alt="neutral button">
+                        <span>we do ok</span>
+                    </div>
+                    <!-- TODO: replace with book, weight or concentrating face -->
+                    <div id="negative" class="self-review">
+                        <input type="image" src="assets/neutral.svg" alt="negative button">
+                        <span>we need practice</span>
+                    </div>
                 </footer>
             </div>
             <label class="control" id="next">
@@ -486,4 +489,5 @@
         </div>
     </div>
 </body>
+
 </html>

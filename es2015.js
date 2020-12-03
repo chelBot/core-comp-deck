@@ -35,8 +35,53 @@
     title: "courageous",
     postive: ["see ahead", "know our priorites", "are focused", "have a global mindset"],
     negative: ["don't see the big picture", "don't consider the broad implications", "lack planning", "push for big ideas"]
-  }]; //Footer Buttons
+  }]; 
 
+  const toggleContents = document.getElementsByClassName("toggle-content");
+
+  for(var i = 0; i < toggleContents.length; i++) {
+    toggleContents[i].addEventListener("click", function() {
+      var parent = this.parentElement;
+      parent.toggleAttribute("open");
+    });
+  }
+
+  // IE details and summary tag support
+  if (typeof HTMLDetailsElement === "undefined") {
+    // Tell IE they exist
+    document.createElement("details");
+    document.createElement("summary");
+    document.addEventListener("click", detailsHandler);
+    document.addEventListener("keypress", detailsHandler);
+    var style = document.createElement("style");
+    style.textContent = 
+      "details :not(summary) {\n" +
+      "    display: none;\n" +
+      "}\n" +
+      "details.showing :not(summary) {\n" +
+      "    display: block;\n" +
+      "}\n";
+    document.querySelector("head").appendChild(style);
+  }
+
+  function detailsHandler(e) {
+    if (e.type === "keypress" && [13, 32].indexOf(e.which || e.keyCode) === -1) {
+      return;
+    }
+    var el = e.target;
+    while (el && el.tagName !== "DETAILS") {
+      if (el.tagName === "BODY") {
+        el = null;
+        break;
+      }
+      el = el.parentNode;
+    }
+    if (el) {
+      el.classList.toggle("showing");
+    }
+  }
+  
+  //Footer Buttons
   var positive = document.getElementById("positive");
   var neutral = document.getElementById("neutral");
   var negative = document.getElementById("negative");
@@ -109,8 +154,9 @@
   });
   negative.addEventListener("click", collectRating, {
     capture: true
-  }); // Create li arrays
-
+  }); 
+  
+  // Create li arrays
   var positiveLIs = [];
   var neturalLIs = [];
   var negativeLIs = [];
@@ -129,11 +175,11 @@
       } else if (rating === "negative") {
         negativeLIs.push(LI);
       }
-    } // console.log("hi", positiveLIs, neturalLIs, negativeLIs);
+    } 
 
-  } // Display items on page
-
-
+  } 
+  
+  // Display items on page
   var postiveUL = document.getElementById("positiveUL");
   var neutralUL = document.getElementById("neutralUL");
   var negativeUL = document.getElementById("negativeUL");
@@ -145,9 +191,10 @@
     neutralUL.innerHTML = neturalLIs.join("");
     negativeUL.innerHTML = "";
     negativeUL.innerHTML = negativeLIs.join("");
-  } //Pagination
-
-
+  } 
+  
+  
+  //Pagination
   var slides = document.getElementsByClassName("slide");
   var previousBtn = document.getElementById("previous");
   var nextBtn = document.getElementById("next");
