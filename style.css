@@ -75,14 +75,15 @@ html {
 
 body {
     font-family: arial, sans-serif;
-    color: white;
+    color: #696969;
+    color: var(--gray);
     font-size: 2rem;
 }
 
 button {
     background: transparent;
     border: none;
-    color: white;
+    color: #696969;
     font-size: 6rem;
     position: absolute;
     right: 0;
@@ -98,12 +99,13 @@ button {
 .cards {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .action-call {
     display: flex;
     justify-self: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -163,6 +165,7 @@ html {
 }
 
 #start-btn {
+    align-self: center;
     padding: 2.5rem 10rem;
     color: #fff;
     font-weight: bolder;
@@ -170,7 +173,7 @@ html {
     display: inline;
     text-align: center;
     background-color: #4156a6;
-    background-color: var(--purple);
+    background-color: var(--secondary-blue);
     display: block;
     font-size: 3rem;
     margin: 10rem 0;
@@ -198,18 +201,78 @@ html {
     transition: max-height 500ms ease-out, background-color 500ms ease-out;
     height: auto;
     max-height: 0px;
-    background-color: #0077c0;
-    background-color: var(--primary-blue);
+    /* background-color: #0077c0;
+    background-color: var(--primary-blue); */
+}
+
+.slides-container {
+    width: 65rem;;
 }
 
 .slides {
     margin-bottom: 4rem;
 }
 
+
+.active-slide > * {
+    padding-left: 5rem;
+}
+
+.slide {
+    transition: all 500ms fade-out;
+}
+.leaders-slide h1 {
+    color: var(--primary-blue);
+}
+
+.leaders-slide .category-header {
+    background: var(--primary-blue);
+}
+
+.team-slide h1 {
+    color: var(--secondary-blue);
+}
+
+.team-slide .category-header {
+    background: var(--secondary-blue);
+}
+
+.innovative-slide h1 {
+    color: var(--purple);
+}
+
+.innovative-slide .category-header {
+    background: var(--purple);
+}
+
+.customer-slide h1 {
+    color: var(--secondary-red);
+}
+
+.customer-slide .category-header {
+    background: var(--secondary-red);
+}
+
+.inclusive-slide h1 {
+    color: var(--primary-red);
+}
+
+.inclusive-slide .category-header {
+    background: var(--primary-red);
+}
+
 .category-header {
-    display: inline-block;
-    margin: 0 0 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.category-header span {
     font-weight: bolder;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-left: 0.3rem;
 }
 
 .gray {
@@ -221,7 +284,6 @@ h1 {
     font-size: 5rem;
     margin-bottom: 3rem;
     line-height: 1;
-    text-decoration: underline;
 }
 
 .question {
@@ -243,7 +305,13 @@ h1 {
 
 .active-slide {
     display: block;
-    color: #fff;
+    color: #696969;
+    color: var(--gray);
+    
+}
+
+.active-slide header,
+.active-slide .columns {
     transition: all ease-out 500ms;
     animation-duration: 800ms;
     animation-name: fadein;
@@ -265,10 +333,10 @@ ol {
 }
 
 details {
-    margin: 3rem 0;
-    padding: 1rem;
-    border: 0.7rem solid #fff;
+    margin: 3rem 5rem;
+    border: 0.3rem solid #696969;
     border-radius: 1rem;
+    padding: 1rem 2rem !important;
 }
 
 summary {
@@ -280,10 +348,14 @@ details div {
     max-width: 50ch;
 }
 
+details:focus {
+    outline-color: var(--primary-blue);
+}
 details:hover {
     cursor: pointer;
     background: linear-gradient(170deg, rgba(0, 119, 192, 1) 0%, rgba(65, 86, 166, 1) 25%, rgba(111, 44, 145, 1) 50%, rgba(183, 39, 85, 1) 75%, rgba(237, 27, 47, 1) 100%);
     background: var(--grad-one);
+    color: white
 }
 
 footer {
@@ -301,6 +373,10 @@ footer {
 
 #close div {
     font-size: 8rem;
+}
+
+#close {
+    display: none;
 }
 
 .self-review,
@@ -321,11 +397,10 @@ footer {
     background: var(--grad-one);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px #fff;;
 }
 
 .resultsHover:hover div {
-    -webkit-text-stroke: transparent !important;
+    /* -webkit-text-stroke: transparent !important; */
 }
 
 .self-review:hover {
@@ -352,17 +427,17 @@ img {
 }
 
 .self-review {
-    border: 0.7rem solid #fff;
     padding: 2rem 0;
     border-radius: 1rem;
     margin-right: 2rem;
     width: 20rem;
+    color: #fff;
 }
 
 .self-review:hover {
     background: linear-gradient(170deg, rgba(0, 119, 192, 1) 0%, rgba(65, 86, 166, 1) 25%, rgba(111, 44, 145, 1) 50%, rgba(183, 39, 85, 1) 75%, rgba(237, 27, 47, 1) 100%);
     background: var(--grad-one);
-    border-color: #fff;
+    /* border-color: #696969; */
     cursor: pointer;
 }
 
@@ -379,7 +454,7 @@ span {
 
 .selected {
     border-color: transparent;
-    background-color: rgba(39, 167, 222, 0.8);
+    background-color: rgb(39, 167, 222) !important;
 }
 
 .selected input[type=image] {
@@ -491,6 +566,10 @@ div#restart {
     color: #fff;
 }
 
+.results {
+    width: 78.6rem;
+}
+
 .rainbow span {
     display: inline-block;
     padding: 1rem;
@@ -499,23 +578,27 @@ div#restart {
 }
 
 .action-call h1.rainbow {
-    background: linear-gradient(170deg, rgba(0, 119, 192, 1) 0%, rgba(65, 86, 166, 1) 25%, rgba(111, 44, 145, 1) 50%, rgba(183, 39, 85, 1) 75%, rgba(237, 27, 47, 1) 100%);
+    /* background: linear-gradient(170deg, rgba(0, 119, 192, 1) 0%, rgba(65, 86, 166, 1) 25%, rgba(111, 44, 145, 1) 50%, rgba(183, 39, 85, 1) 75%, rgba(237, 27, 47, 1) 100%);
     background: var(--grad-one);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: var(--secondary-blue);
     font-size: 9.3rem;
     font-weight: bolder;
     margin-bottom: 0;
     text-decoration: none;
-    line-height: 1.5;
+    line-height: 1.3;
+    font-size: 7rem;
+    max-width: 1400px;
 }
 
 .results h1.rainbow {
+    background: #4156a6;
     background: linear-gradient(170deg, rgba(0, 119, 192, 1) 0%, rgba(65, 86, 166, 1) 25%, rgba(111, 44, 145, 1) 50%, rgba(183, 39, 85, 1) 75%, rgba(237, 27, 47, 1) 100%);
     background: var(--grad-one);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: bolder;
     margin-bottom: 3rem;
     text-decoration: none;
@@ -530,7 +613,7 @@ div#restart {
         background: transparent;
     }
     .control:hover div {
-        color: rgba(255, 255, 255, 0.6);
+        color: rgb(148, 146, 146);
         background: transparent;
     }
     .resultsHover:hover div {
