@@ -156,6 +156,7 @@
   }); 
   
   // Create li arrays
+
   var positiveLIs = [];
   var neturalLIs = [];
   var negativeLIs = [];
@@ -175,7 +176,6 @@
         negativeLIs.push(LI);
       }
     } 
-
   } 
   
   // Display items on page
@@ -217,42 +217,31 @@
       previousBtn.style.visibility = "hidden";
       previousBtn.firstChild.src = "assets/restart.svg";
       footer.style.visibility = "hidden";
-      // modal.style.backgroundColor = "#fff";
-      // close.style.color = "#696969";
-      // close.classList.add("resultsHover");
       populateArrays();
       populateLists();
     } else {
       nextBtn.style.visibility = "visible";
       footer.style.visibility = "visible";
-      // close.style.color = "#fff";
-      // close.classList.remove("resultsHover");
       previousBtn.firstElementChild.src = "assets/previous.svg";
-      // previousBtn.style.color = "#fff";
     }
 
     if (currentSlide >= 0 && currentSlide <= 3) {
-      // modal.style.backgroundColor = "#0077c0";
       positive.style.backgroundColor = "#0077c0";
       neutral.style.backgroundColor = "#0077c0";
       negative.style.backgroundColor = "#0077c0";
     } else if (currentSlide > 3 && currentSlide <= 7) {
-      // modal.style.backgroundColor = "#4156a6";
       positive.style.backgroundColor = "#4156a6";
       neutral.style.backgroundColor = "#4156a6";
       negative.style.backgroundColor = "#4156a6";
     } else if (currentSlide > 7 && currentSlide <= 11) {
-      // modal.style.backgroundColor = "#6f2c91";
       positive.style.backgroundColor = "#6f2c91";
       neutral.style.backgroundColor = "#6f2c91";
       negative.style.backgroundColor = "#6f2c91";
     } else if (currentSlide > 11 && currentSlide <= 15) {
-      // modal.style.backgroundColor = "#b72755";
       positive.style.backgroundColor = "#b72755";
       neutral.style.backgroundColor = "#b72755";
       negative.style.backgroundColor = "#b72755";
     } else if (currentSlide >= 15 && currentSlide <= 19) {
-      // modal.style.backgroundColor = "#ed1b2f";
       positive.style.backgroundColor = "#ed1b2f";
       neutral.style.backgroundColor = "#ed1b2f";
       negative.style.backgroundColor = "#ed1b2f";
@@ -283,9 +272,33 @@
   previousBtn.addEventListener("click", showPreviousSlide);
   nextBtn.addEventListener("click", showNextSlide);
   restart.addEventListener("click", function () {
+    
+    values = {
+      future_focus: ["leaders", undefined],
+      ownership: ["leaders", undefined],
+      growth: ["leaders", undefined],
+      courageous: ["leaders", undefined],
+      self_aware: ["team-players", undefined],
+      builds_networks: ["team-players", undefined],
+      drives_for_results: ["team-players", undefined],
+      engages_others: ["team-players", undefined],
+      creative: ["innovative", undefined],
+      critical_thinker: ["innovative", undefined],
+      relentless_improver: ["innovative", undefined],
+      embrace_change: ["innovative", undefined],
+      patient_focus: ["customer-obsessed", undefined],
+      customer_empathy: ["customer-obsessed", undefined],
+      value_creation: ["customer-obsessed", undefined],
+      business_acumen: ["customer-obsessed", undefined],
+      build_trust: ["inclusive", undefined],
+      seek_diverse_views: ["inclusive", undefined],
+      respects_others: ["inclusive", undefined],
+      communicates_effectively: ["inclusive", undefined]
+    }
     positiveLIs = [];
     neturalLIs = [];
     negativeLIs = [];
+    populateArrays();
     showSlide(0);
   });
 })();
