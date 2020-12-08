@@ -201,8 +201,6 @@ html {
     transition: max-height 500ms ease-out, background-color 500ms ease-out;
     height: auto;
     max-height: 0px;
-    /* background-color: #0077c0;
-    background-color: var(--primary-blue); */
 }
 
 .slides-container {
@@ -222,42 +220,52 @@ html {
     transition: all 500ms fade-out;
 }
 .leaders-slide h1 {
+    color: #0077c0;
     color: var(--primary-blue);
 }
 
 .leaders-slide .category-header {
+    background: #0077c0;
     background: var(--primary-blue);
 }
 
 .team-slide h1 {
+    color: #4156a6;
     color: var(--secondary-blue);
 }
 
 .team-slide .category-header {
+    background: #4156a6;
     background: var(--secondary-blue);
 }
 
 .innovative-slide h1 {
+    color: #6f2c91;
     color: var(--purple);
 }
 
 .innovative-slide .category-header {
+    background: #6f2c91;
     background: var(--purple);
 }
 
 .customer-slide h1 {
+    color: #b72755;
     color: var(--secondary-red);
 }
 
 .customer-slide .category-header {
+    background: #b72755;
     background: var(--secondary-red);
 }
 
 .inclusive-slide h1 {
+    color: #ed1b2f;
     color: var(--primary-red);
 }
 
 .inclusive-slide .category-header {
+    background: #ed1b2f;
     background: var(--primary-red);
 }
 
