@@ -4,20 +4,26 @@
   var modal = document.getElementById("modal");
   var start = document.getElementById("start-screen");
   var close = document.getElementById("close");
+  var previousBtn = document.getElementById("previous");
+  var nextBtn = document.getElementById("next");
+
   startBtn.addEventListener("click", function () {
-    modal.style.maxHeight = "100vh"; // modal.style.height= "500px";
+    modal.style.maxHeight = "100vh"; 
 
     modal.style.visibility = "visible";
     start.style.maxHeight = "0";
     start.style.visibility = "hidden";
     close.style.display = "flex";
+    nextBtn.style.display = "block";
+    previousBtn.style.display = "block";
   });
   close.addEventListener("click", function () {
-    // start.style.display = "flex";
     start.style.maxHeight = "100vh";
     start.style.visibility = "visible";
     modal.style.maxHeight = "0";
     close.style.display = "none";
+    nextBtn.style.display = "none";
+    previousBtn.style.display = "none";
   });
   var slideContent = [{
     title: "future focus",
@@ -156,7 +162,6 @@
   }); 
   
   // Create li arrays
-
   var positiveLIs = [];
   var neturalLIs = [];
   var negativeLIs = [];
@@ -195,8 +200,6 @@
   
   //Pagination
   var slides = document.getElementsByClassName("slide");
-  var previousBtn = document.getElementById("previous");
-  var nextBtn = document.getElementById("next");
   var footer = document.getElementById("footer");
   var restart = document.getElementById("restart");
   var currentSlide = 0;
