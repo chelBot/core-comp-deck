@@ -57,7 +57,7 @@ table {
     --secondary-blue: #4156a6;
     --purple: #6f2c91;
     --secondary-red: #b72755;
-    --primary-red: #ed1b2f;
+    --primary-red: #DA1F3D;
 
     --gray: #696969;
 }
@@ -113,7 +113,7 @@ button {
     padding: 1rem;
     border-radius: 1rem;
     margin-right: 2rem;
-    width: 21rem;
+    width: 23rem;
 }
 
 .comp-card h2 {
@@ -143,7 +143,7 @@ button {
 }
 
 .inclusive-card {
-    border: 0.7rem solid #ed1b2f;
+    border: 0.7rem solid #DA1F3D;
     border: 0.7rem solid var(--primary-red);
 }
 
@@ -260,12 +260,12 @@ html {
 }
 
 .inclusive-slide h1 {
-    color: #ed1b2f;
+    color: #DA1F3D;
     color: var(--primary-red);
 }
 
 .inclusive-slide .category-header {
-    background: #ed1b2f;
+    background: #DA1F3D;
     background: var(--primary-red);
 }
 
@@ -537,7 +537,7 @@ div#restart {
 }
 
 .inclusive {
-    color: #ed1b2f;
+    color: #DA1F3D;
     color: var(--primary-red);
 }
 
@@ -570,7 +570,7 @@ div#restart {
 }
 
 .inclusive-bg {
-    background-color: #ed1b2f;
+    background-color: #DA1F3D;
     background-color: var(--primary-red);
     font-weight: bolder !important;
     color: #fff;
@@ -638,6 +638,10 @@ div#restart {
     body {
         font-size: 1.4rem;
     }
+
+    /* .action-call {
+        padding: 1rem;
+    } */
 
     .container {
         padding-top: 4rem;

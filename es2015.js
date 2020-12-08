@@ -94,7 +94,7 @@
   var values = {
     future_focus: ["leaders", undefined],
     ownership: ["leaders", undefined],
-    growth: ["leaders", undefined],
+    develops_self_and_others: ["leaders", undefined],
     courageous: ["leaders", undefined],
     self_aware: ["team-players", undefined],
     builds_networks: ["team-players", undefined],
@@ -118,7 +118,6 @@
     e.stopPropagation();
     var id = document.getElementsByClassName("active-slide")[0].id;
     var rating = e.target.id || e.target.parentNode.id;
-    console.log(e.target, rating);
     values[id][1] = rating;
 
     if (rating === "positive") {
@@ -245,9 +244,9 @@
       neutral.style.backgroundColor = "#b72755";
       negative.style.backgroundColor = "#b72755";
     } else if (currentSlide >= 15 && currentSlide <= 19) {
-      positive.style.backgroundColor = "#ed1b2f";
-      neutral.style.backgroundColor = "#ed1b2f";
-      negative.style.backgroundColor = "#ed1b2f";
+      positive.style.backgroundColor = "#da1f3d";
+      neutral.style.backgroundColor = "#da1f3d";
+      negative.style.backgroundColor = "#da1f3d";
     } else {
       // modal.style.backgroundColor = "#fff";
     }
@@ -279,7 +278,7 @@
     values = {
       future_focus: ["leaders", undefined],
       ownership: ["leaders", undefined],
-      growth: ["leaders", undefined],
+      develops_self_and_others: ["leaders", undefined],
       courageous: ["leaders", undefined],
       self_aware: ["team-players", undefined],
       builds_networks: ["team-players", undefined],
